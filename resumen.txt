@@ -1,3 +1,7 @@
+Un sistema operativo es un programa el cual hace de intermediario entre el usuario y el hardware,
+Su objetivo principal es el ser comodo al usuario y el objetivo segundiario es administrar y
+optimizar el sistema.
+
 Dentro dee un sistemas operativos, podemos encontrar arquitecturas y estructuras;
 Estas se verán modificadas por el hardware que tenga el computador. Algunas de las más 
 comunes son las siguites:
@@ -23,5 +27,17 @@ de la arquitectura por capas.
 en cada sistema independiente presentes el nucleo y los componentes minimos para la ejecucion para la ejecucion 
 de los procesos. En esta aruitectura se manifiesta la necesidad de establaces llamadas robustas con el sistema 
 
+Independientemente de la estructura del SO, todos poseen un microkernel (Nucleo), dentro de este solo se 
+encuentran los elementos fundamentales para el funcionamineto del SO. Este se suele ejecutar de forma prioritaria 
+y provee servicios escenciales como; Abstaccion de procesos, administracion de hilos, intercomunicacion de procesos entre otros.
+ Dentro del MicroKernel no se encuentran directivas, unicamente mecanismos para acceder a los recursos del hardware. 
+Los procesos en el SO se dividen en dos grandes grupos; modo kernel y modo usuario, en este ultimo encontramos software 
+como administrador de procesos, administrador de procesos, sistema de archivos, entre otros. 
+En este modo los servicios del sistema se encuentra en su propia direccion de memoria y se ejecuta con los mismos priviegios 
+que las aplicaciones usuario. 
 
+Entre las ventajas del microkernel encontramos la eextensibilidad que ofrese, dando la facilidad de agregar nuevas 
+funcionalidades en el modo usuario. Mayor seguridad y fiabilidad, pues los servicios del SO que fallen en modo usuario
+no arruinaran todo el sistema. La sismplicidad tambien es uno de sus puntos fuertes, ya que facilita la correccion de fallas.
+Por otro lado, entre sustedeventajas encontramos un bajo rendimiento y desempeño.
 
