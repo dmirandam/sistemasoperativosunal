@@ -1,1 +1,27 @@
-.
+Dentro dee un sistemas operativos, podemos encontrar arquitecturas y estructuras;
+Estas se verán modificadas por el hardware que tenga el computador. Algunas de las más 
+comunes son las siguites:
+
+-> Sistema monoliticos: Son los mas comunes y sencillos ya que todos los componentes de gestion 
+y programas del sistema estan escritos en un solo codigo.
+
+Su principal ventaja es la velocidad, ya que todos los componentes del SO tienen 
+los mismos privilegios y direcciones. La demora para ejecutar llamadas al sistema es minima. 
+Sin embargo es susebtible a que el sistema se apague o bloquee si ocurre algun fallo e el hardware, 
+esto devido a que todo el sistema se ejecuta en el mismo nivel de provilegio que el nucleo.
+
+-> Sistema por capas o niveles de privilegio: A medida que el haware comenzó a evolucionar en pro 
+de la proteccion de proceso, los SO tambien lo hicieron. Y es así como surge este SO en el cual,
+el objetivo principale es separar la accion del codigo de los procesos del sistema,
+del nucleo y de los procesos de usuario; esto lo logra creando restricciones en las llamadas
+de sistema que pueden ejecutar los procesos de determinado nivel.
+
+-> Sistema De micronucleo: Se combina la sencilles de las arquitectura monolitica y la organizacion
+de la arquitectura por capas.
+
+-> Sistema Cliente-Servidor: El nucleo establece y garantiza la comunicacion entre procesos.
+en cada sistema independiente presentes el nucleo y los componentes minimos para la ejecucion para la ejecucion 
+de los procesos. En esta aruitectura se manifiesta la necesidad de establaces llamadas robustas con el sistema 
+
+
+
