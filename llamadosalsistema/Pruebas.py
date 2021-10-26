@@ -6,16 +6,10 @@ proc = psutil.Process(os.getpid())
 gc.collect()
 mem0 = proc.get_memory_info().rss
 
-# create approx. 10**7 int objects and pointers
 foo = ['abc' for x in range(10**7)]
 mem1 = proc.get_memory_info().rss
-
-# unreference, including x == 9999999
 del foo, x
 mem2 = proc.get_memory_info().rss
-
-# collect() calls PyInt_ClearFreeList()
-# or use ctypes: pythonapi.PyInt_ClearFreeList()
 gc.collect()
 mem3 = proc.get_memory_info().rss
 
